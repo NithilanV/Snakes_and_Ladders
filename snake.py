@@ -17,7 +17,7 @@ if playernum=="2":
   while p1<100 and p2<100:
     input("Player 1, please press 'Enter' to roll the dice.")
     # replit.clear()
-    print("There are snakes at ",s1,s2,s3," and there are ladders at ",l1,l2,l3,".")
+    print("There are snakes at",s1,s2,s3,"and there are ladders at",l1,l2,l3)
     dice = random.randint(1,6)
     print("You rolled a", dice)
     p1 = p1 + dice
