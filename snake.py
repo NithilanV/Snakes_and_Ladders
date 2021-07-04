@@ -10,11 +10,26 @@ p1 = 0
 p2 = 0
 p3 = 0
 p4 = 0
+def player1(p1f):
+  input("Player 1, please press 'Enter' to roll the dice.")
+  # replit.clear()
+  print("There are snakes at",s1,s2,s3,"and there are ladders at",l1,l2,l3)
+  dice = random.randint(1,6)
+  print("You rolled a", dice)
+  p1f = p1f + dice
+  if p1f==s1 or p1f==s2 or p1f==s3:
+    print ("Player 1 hit a snake. Player 1 will move back 10 spaces")
+    p1f=p1f-10
+  if p1f==l1 or p1==l2 or p1==l3:
+    p1f=p1f+10
+    print ("Player 1 hit a ladder. Player 1 will move forward 10 spaces")
+  print("Player 1 is in position ", p1)
 playernum=input("How many players do you want? 2, 3 or 4.")
 if playernum=="2":
   print("Player 1 position =", p1)
   print("Player 2 position =", p2)
   while p1<100 and p2<100:
+    # player1(p1)
     input("Player 1, please press 'Enter' to roll the dice.")
     # replit.clear()
     print("There are snakes at",s1,s2,s3,"and there are ladders at",l1,l2,l3)
